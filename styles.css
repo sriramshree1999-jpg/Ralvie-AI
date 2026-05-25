@@ -83,7 +83,7 @@ h1, h2, h3, h4 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
 .nav-inner {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 13px 28px;
+  padding: 16px 28px;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -147,7 +147,7 @@ h1, h2, h3, h4 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
 .panel {
   position: absolute;
   top: 100%;
-  padding-top: 12px;
+  padding-top: 18px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -182,7 +182,7 @@ h1, h2, h3, h4 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
 }
 
 /* ---- mega: products ---- */
-.mega-products { display: flex; width: 900px; padding: 18px; }
+.mega-products { display: flex; width: 900px; padding: 22px; }
 .mega-tabs {
   width: 296px;
   flex-shrink: 0;
@@ -190,7 +190,7 @@ h1, h2, h3, h4 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
   flex-direction: column;
   gap: 4px;
   padding-right: 18px;
-  border-right: 1px solid rgba(255, 255, 255, 0.14);
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
 }
 .mega-tab {
   display: flex;
@@ -268,7 +268,7 @@ h1, h2, h3, h4 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
 .mega-hero-arrow svg { width: 16px; height: 16px; }
 .mega-hero-card:hover .mega-hero-arrow { transform: translateX(3px); }
 
-.mega-features { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
+.mega-features { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .mega-feature {
   display: flex;
   align-items: center;
@@ -300,10 +300,10 @@ h1, h2, h3, h4 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 900px;
-  padding: 18px;
+  padding: 22px;
 }
 .sol-group { padding: 4px 16px; }
-.sol-group + .sol-group { border-left: 1px solid rgba(255, 255, 255, 0.14); }
+.sol-group + .sol-group { border-left: 1px solid rgba(255, 255, 255, 0.22); }
 .sol-head {
   display: flex;
   align-items: center;
@@ -313,7 +313,7 @@ h1, h2, h3, h4 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; }
   color: var(--text);
   padding-bottom: 12px;
   margin-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
 }
 .sol-head-ic {
   display: grid; place-items: center;
