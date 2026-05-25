@@ -79,6 +79,27 @@
     tab.addEventListener('mouseenter', activate);
   });
 
+  /* keep wide mega-menus inside the viewport (shift left if they'd overflow) */
+  function clampMegaPosition(item) {
+    var panel = item.querySelector('.panel-mega');
+    if (!panel) return;
+    panel.style.left = '';
+    var r = panel.getBoundingClientRect();
+    var margin = 16;
+    var overflow = r.right + margin - window.innerWidth;
+    if (overflow > 0) panel.style.left = (-overflow) + 'px';
+  }
+  document.querySelectorAll('.nav-item.mega-item').forEach(function (item) {
+    item.addEventListener('mouseenter', function () { clampMegaPosition(item); });
+    var btn = item.querySelector('.nav-link');
+    if (btn) btn.addEventListener('click', function () {
+      requestAnimationFrame(function () { clampMegaPosition(item); });
+    });
+  });
+  window.addEventListener('resize', function () {
+    document.querySelectorAll('.nav-item.mega-item').forEach(clampMegaPosition);
+  });
+
   /* reset menu state when crossing the desktop/mobile breakpoint */
   var mq = window.matchMedia('(min-width: 981px)');
   var onMq = function () { closeMenu(); };
