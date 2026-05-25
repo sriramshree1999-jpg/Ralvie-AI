@@ -228,18 +228,31 @@ body.home ::selection { background: var(--primary); color: #fff; }
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(900px 700px at 18% 14%, rgba(75, 65, 225, 0.28), transparent 55%),
-    radial-gradient(800px 600px at 82% 18%, rgba(135, 128, 228, 0.26), transparent 60%),
-    radial-gradient(700px 500px at 70% 88%, rgba(197, 192, 255, 0.36), transparent 60%),
-    radial-gradient(600px 480px at 14% 92%, rgba(89, 81, 178, 0.22), transparent 55%),
-    radial-gradient(500px 400px at 50% 52%, rgba(255, 255, 255, 0.55), transparent 70%);
+    /* center spotlight for text legibility */
+    radial-gradient(900px 620px at 50% 48%, rgba(255, 255, 255, 0.68), transparent 70%),
+    /* corner color washes */
+    radial-gradient(720px 540px at 8% 12%, rgba(135, 128, 228, 0.22), transparent 60%),
+    radial-gradient(720px 540px at 92% 12%, rgba(75, 65, 225, 0.18), transparent 60%),
+    radial-gradient(900px 720px at 50% 100%, rgba(197, 192, 255, 0.42), transparent 65%),
+    /* fine vertical streaks (two layers, non-coincident spacing) */
+    repeating-linear-gradient(90deg,
+      rgba(75, 65, 225, 0.09) 0,
+      rgba(75, 65, 225, 0.09) 1px,
+      transparent 1px,
+      transparent 60px),
+    repeating-linear-gradient(90deg,
+      rgba(135, 128, 228, 0.05) 0,
+      rgba(135, 128, 228, 0.05) 1px,
+      transparent 1px,
+      transparent 19px),
+    #f7f9fb;
 }
 .h-hero-noise {
   position: absolute;
   inset: 0;
   z-index: 1;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>");
-  opacity: 0.08;
+  opacity: 0.05;
   mix-blend-mode: overlay;
   pointer-events: none;
 }
@@ -305,19 +318,33 @@ body.home ::selection { background: var(--primary); color: #fff; }
   flex-wrap: wrap;
   justify-content: center;
 }
+.home .btn-primary {
+  background: #0a0046;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px -10px rgba(20, 17, 80, 0.45),
+              inset 0 1px 0 rgba(255, 255, 255, 0.10);
+}
+.home .btn-primary:hover {
+  background: #1d0b77;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -12px rgba(75, 65, 225, 0.55),
+              inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
 .h-btn-light {
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(20, 17, 80, 0.12);
-  color: var(--text);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(75, 65, 225, 0.20);
+  color: var(--primary);
+  font-weight: 600;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 6px 14px -6px rgba(20, 17, 80, 0.10);
+  box-shadow: 0 6px 14px -6px rgba(20, 17, 80, 0.08);
 }
 .h-btn-light:hover {
   transform: translateY(-3px);
-  border-color: rgba(75, 65, 225, 0.38);
-  box-shadow: 0 14px 30px -10px rgba(75, 65, 225, 0.26);
-  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(75, 65, 225, 0.44);
+  background: #ffffff;
+  box-shadow: 0 14px 30px -10px rgba(75, 65, 225, 0.28);
 }
 
 /* ============================ SECTION BASE ============================ */
@@ -540,14 +567,21 @@ body.home ::selection { background: var(--primary); color: #fff; }
 }
 .h-features-dark .h-feature-card h3 { color: var(--text); }
 .h-features-dark .h-feature-card p { color: var(--text-dim); }
-.h-features-dark .h-feature-ic {
-  background: rgba(255, 255, 255, 0.07);
-  color: var(--accent-soft);
-}
-.h-features-dark .h-feature-card:hover .h-feature-ic {
-  background: var(--grad);
-  color: #fff;
-}
+
+/* colorful pastel icons per card (Frontdesk Features) */
+.h-features-dark .h-feature-card:nth-child(1) .h-feature-ic { background: rgba(110, 231, 183, 0.14); color: #6ee7b7; }   /* green  - AI Phone Receptionist */
+.h-features-dark .h-feature-card:nth-child(2) .h-feature-ic { background: rgba(125, 211, 252, 0.14); color: #7dd3fc; }   /* blue   - AI Website Chatbot   */
+.h-features-dark .h-feature-card:nth-child(3) .h-feature-ic { background: rgba(253, 186, 116, 0.14); color: #fdba74; }   /* orange - AI Email Manager      */
+.h-features-dark .h-feature-card:nth-child(4) .h-feature-ic { background: rgba(253, 164, 175, 0.14); color: #fda4af; }   /* rose   - SMS Texting Agent     */
+.h-features-dark .h-feature-card:nth-child(5) .h-feature-ic { background: rgba(196, 181, 253, 0.14); color: #c4b5fd; }   /* lilac  - AI Web Voicebot       */
+.h-features-dark .h-feature-card:nth-child(6) .h-feature-ic { background: rgba(94, 234, 212, 0.14); color: #5eead4; }    /* teal   - Website Forms         */
+
+.h-features-dark .h-feature-card:nth-child(1):hover .h-feature-ic { background: rgba(110, 231, 183, 0.28); color: #a7f3d0; }
+.h-features-dark .h-feature-card:nth-child(2):hover .h-feature-ic { background: rgba(125, 211, 252, 0.28); color: #bae6fd; }
+.h-features-dark .h-feature-card:nth-child(3):hover .h-feature-ic { background: rgba(253, 186, 116, 0.28); color: #fed7aa; }
+.h-features-dark .h-feature-card:nth-child(4):hover .h-feature-ic { background: rgba(253, 164, 175, 0.28); color: #fecdd3; }
+.h-features-dark .h-feature-card:nth-child(5):hover .h-feature-ic { background: rgba(196, 181, 253, 0.28); color: #ddd6fe; }
+.h-features-dark .h-feature-card:nth-child(6):hover .h-feature-ic { background: rgba(94, 234, 212, 0.28); color: #99f6e4; }
 
 /* ============================ TRUST ============================ */
 .h-trust-section { padding: 80px 28px 120px; }
