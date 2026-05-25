@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ralvie AI Frontdesk — The front desk that never sleeps</title>
+<meta name="description" content="Ralvie AI Frontdesk answers every call, message, and email instantly. It books appointments, qualifies leads, and routes the rest to your team — 24/7." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ralvie AI Frontdesk",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "An always-on AI front desk that answers calls, messages, and emails, books appointments, and routes inquiries 24/7.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body>
+
+<div class="page-fx" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="./" class="brand" aria-label="Ralvie home">
+      <img src="ralvie-logo.svg" alt="Ralvie" class="brand-logo" />
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+
+        <!-- ========== PRODUCTS ========== -->
+        <li class="nav-item mega-item">
+          <button class="nav-link" type="button" aria-expanded="false">
+            Products
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="panel panel-mega">
+            <div class="panel-card mega-products">
+              <div class="mega-tabs" role="tablist">
+                <button class="mega-tab is-active" type="button" data-tab="m-productivity">
+                  <span class="mega-tab-ic">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 20v-6M12 20V8M17 20v-9"/></svg>
+                  </span>
+                  <span class="mega-tab-tx"><strong>Ralvie AI Productivity</strong></span>
+                </button>
+                <button class="mega-tab" type="button" data-tab="m-frontdesk">
+                  <span class="mega-tab-ic">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18v-6a7 7 0 0 1 14 0v6"/><path d="M5 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0ZM15 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0Z"/><path d="M19 18a4 4 0 0 1-4 4h-3"/></svg>
+                  </span>
+                  <span class="mega-tab-tx"><strong>Ralvie AI Frontdesk</strong></span>
+                </button>
+              </div>
+              <div class="mega-body">
+                <div class="mega-pane is-active" id="m-productivity">
+                  <p class="mega-pane-title">Ralvie AI Productivity</p>
+                  <a href="#" class="mega-hero-card">
+                    <div class="mega-hero-text">
+                      <h4>Ralvie AI Productivity</h4>
+                      <p>Boost productivity with smarter, faster workflows.</p>
+                    </div>
+                    <span class="mega-hero-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                  <div class="mega-features">
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span>
+                      Automatic tracking
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3.5 2"/></svg></span>
+                      Time logs
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+                      Screen captures
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h4l2.2 2.4H19a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+                      Projects
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10"/><path d="m3.5 6 1.4 1.5L7.5 5M3.5 12l1.4 1.5L7.5 11M3.5 18l1.4 1.5L7.5 17"/></svg></span>
+                      Tasks
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="9" rx="1.6"/><rect x="13.5" y="3" width="7.5" height="5.5" rx="1.6"/><rect x="13.5" y="12" width="7.5" height="9" rx="1.6"/><rect x="3" y="15" width="7.5" height="6" rx="1.6"/></svg></span>
+                      Dashboards
+                    </a>
+                  </div>
+                </div>
+                <div class="mega-pane" id="m-frontdesk">
+                  <p class="mega-pane-title">Ralvie AI Frontdesk</p>
+                  <a href="#" class="mega-hero-card">
+                    <div class="mega-hero-text">
+                      <h4>Ralvie AI Frontdesk</h4>
+                      <p>Simplify reception tasks with intelligent automation.</p>
+                    </div>
+                    <span class="mega-hero-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                  <div class="mega-features">
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg></span>
+                      AI Phone Receptionist
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4.5M9.5 4.5h5"/><circle cx="9.5" cy="14" r="1.2"/><circle cx="14.5" cy="14" r="1.2"/></svg></span>
+                      AI Website Chatbot
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3.5 7.5 8.5 5.5 8.5-5.5"/></svg></span>
+                      AI Email Manager
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7l-5 4v-4H6a2 2 0 0 1-2-2Z"/><path d="M8 8h8M8 12h5"/></svg></span>
+                      SMS Texting Agent
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z"/><path d="M18.5 10a6.5 6.5 0 0 1-13 0M12 16.5V21M8.5 21h7"/></svg></span>
+                      AI Web Voicebot
+                    </a>
+                    <a href="#" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8Z"/><path d="M14 2.5V8h5.5M8.5 13h7M8.5 17h4.5"/></svg></span>
+                      Website Forms
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- ========== SOLUTIONS ========== -->
+        <li class="nav-item mega-item">
+          <button class="nav-link" type="button" aria-expanded="false">
+            Solutions
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="panel panel-mega">
+            <div class="panel-card mega-solutions">
+              <div class="sol-group">
+                <div class="sol-head">
+                  <span class="sol-head-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 20v-6M12 20V8M17 20v-9"/></svg></span>
+                  Ralvie AI Productivity
+                </div>
+                <div class="sol-cols">
+                  <div class="sol-col">
+                    <h5>Use Cases</h5>
+                    <a href="#">Employee Productivity</a>
+                    <a href="#">Time Tracking</a>
+                    <a href="#">Project Management</a>
+                    <a href="#">Task Management</a>
+                    <a href="#">Dashboards &amp; Reports</a>
+                  </div>
+                  <div class="sol-col">
+                    <h5>Industries</h5>
+                    <a href="#">Enterprise</a>
+                    <a href="#">Finance</a>
+                    <a href="#">Insurance</a>
+                    <a href="#">Healthcare</a>
+                    <a href="#">IT</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sol-group">
+                <div class="sol-head">
+                  <span class="sol-head-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18v-6a7 7 0 0 1 14 0v6"/><path d="M5 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0ZM15 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0Z"/><path d="M19 18a4 4 0 0 1-4 4h-3"/></svg></span>
+                  Ralvie AI Frontdesk
+                </div>
+                <div class="sol-cols">
+                  <div class="sol-col">
+                    <h5>Use Cases</h5>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Lead Management</a>
+                    <a href="#">AI Call Handling</a>
+                    <a href="#">AI Chat Support</a>
+                    <a href="#">Email &amp; SMS Automation</a>
+                  </div>
+                  <div class="sol-col">
+                    <h5>Industries</h5>
+                    <a href="#">Healthcare clinics</a>
+                    <a href="#">Hotels and hospitality</a>
+                    <a href="#">Real estate offices</a>
+                    <a href="#">Education institutions</a>
+                    <a href="#">Consultancy firms</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- ========== RESOURCES ========== -->
+        <li class="nav-item drop-item">
+          <button class="nav-link" type="button" aria-expanded="false">
+            Resources
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="panel panel-drop">
+            <div class="panel-card drop-list">
+              <a href="#" class="drop-link">
+                <span class="drop-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+                Blogs
+              </a>
+              <a href="#" class="drop-link">
+                <span class="drop-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 13.5 13.5 10.5"/><path d="M13 7.5 14.5 6a3.5 3.5 0 0 1 5 5l-1.5 1.5M11 16.5 9.5 18a3.5 3.5 0 0 1-5-5L6 11.5"/></svg></span>
+                Integrations
+              </a>
+              <a href="#" class="drop-link">
+                <span class="drop-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17v-5a7 7 0 0 1 14 0v5"/><path d="M5 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0ZM15 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0Z"/></svg></span>
+                Contact us
+              </a>
+              <a href="#" class="drop-link">
+                <span class="drop-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M12 15l4.5-4.5M12 15 7.5 10.5M4.5 17v1.5a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5V17"/></svg></span>
+                Downloads
+              </a>
+              <a href="#" class="drop-link">
+                <span class="drop-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H19v15H7.5A2.5 2.5 0 0 0 5 19.5Z"/><path d="M5 19.5A2.5 2.5 0 0 1 7.5 17H19v5H7.5A2.5 2.5 0 0 1 5 19.5Z"/></svg></span>
+                Knowledge base
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="nav-actions">
+        <div class="nav-item drop-item">
+          <button class="nav-link nav-signin" type="button" aria-expanded="false">
+            Sign in
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="panel panel-drop panel-drop-right">
+            <div class="panel-card drop-list">
+              <span class="drop-title">Sign in to</span>
+              <a href="#" class="drop-link">
+                <span class="drop-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 20v-6M12 20V8M17 20v-9"/></svg></span>
+                Ralvie AI Productivity
+              </a>
+              <a href="#" class="drop-link">
+                <span class="drop-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18v-6a7 7 0 0 1 14 0v6"/><path d="M5 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0ZM15 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0Z"/><path d="M19 18a4 4 0 0 1-4 4h-3"/></svg></span>
+                Ralvie AI Frontdesk
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#cta" class="btn btn-primary btn-sm">Book a demo</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div id="hero-canvas" class="hero-bg" role="img"
+         aria-label="Animated AI voice waveform visualization">
+      <div class="canvas-fallback" aria-hidden="true"></div>
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="eyebrow"><span class="pulse-dot"></span>Always-on AI voice receptionist</span>
+      <h1>The front desk that <span class="grad">never sleeps.</span></h1>
+      <p class="hero-sub">
+        Ralvie AI Frontdesk answers every call, text, and email the instant it arrives —
+        booking appointments, qualifying leads, and routing the rest to your team around the clock.
+      </p>
+      <div class="hero-cta">
+        <a href="#cta" class="btn btn-primary">Start free trial</a>
+        <a href="#how" class="btn btn-ghost">
+          <span class="play-ico" aria-hidden="true"></span>See how it works
+        </a>
+      </div>
+      <ul class="hero-trust">
+        <li>No credit card</li>
+        <li>Live in 24 hours</li>
+        <li>Keeps your existing number</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== LOGO STRIP ===================== -->
+  <section class="strip reveal">
+    <p class="strip-label">Trusted by teams that can't afford a missed connection</p>
+    <div class="strip-logos">
+      <span>Clinics</span><span>Law Firms</span><span>Real Estate</span>
+      <span>Home Services</span><span>Agencies</span><span>Salons</span>
+    </div>
+  </section>
+
+  <!-- ===================== CHANNELS ===================== -->
+  <section class="section" id="channels">
+    <div class="section-head reveal">
+      <span class="label">Omnichannel</span>
+      <h2>One AI front desk. <span class="grad">Every channel</span> your customers use.</h2>
+      <p>Ralvie picks up wherever the conversation starts — and keeps the context as it moves between them.</p>
+    </div>
+    <div class="channel-grid">
+      <article class="channel-card glass reveal" data-channel="calls">
+        <span class="ch-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+        </span>
+        <h3>Phone Calls</h3>
+        <p>Answers inbound calls in under a second with a natural, on-brand voice.</p>
+      </article>
+      <article class="channel-card glass reveal" data-channel="voice">
+        <span class="ch-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3Z"/><path d="M19 10a7 7 0 0 1-14 0M12 17v5M8 22h8"/></svg>
+        </span>
+        <h3>Voice Assistant</h3>
+        <p>Real-time spoken conversations that understand intent, not just keywords.</p>
+      </article>
+      <article class="channel-card glass reveal" data-channel="sms">
+        <span class="ch-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.8-.8L3 21l1.9-4.2A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>
+        </span>
+        <h3>SMS &amp; Text</h3>
+        <p>Two-way texting that confirms bookings and answers questions instantly.</p>
+      </article>
+      <article class="channel-card glass reveal" data-channel="email">
+        <span class="ch-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+        </span>
+        <h3>Email</h3>
+        <p>Reads, replies, and triages your inbox so nothing waits until morning.</p>
+      </article>
+      <article class="channel-card glass reveal" data-channel="chat">
+        <span class="ch-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13H5a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v1"/><path d="M22 14a3 3 0 0 0-3-3h-7a3 3 0 0 0-3 3v3a3 3 0 0 0 3 3h6l4 3Z"/></svg>
+        </span>
+        <h3>Live Chat</h3>
+        <p>Greets every website visitor and turns curiosity into qualified leads.</p>
+      </article>
+      <article class="channel-card glass reveal" data-channel="forms">
+        <span class="ch-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+        </span>
+        <h3>Web Forms</h3>
+        <p>Instantly follows up on every form submission before the lead goes cold.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section" id="how">
+    <div class="section-head reveal">
+      <span class="label">How it works</span>
+      <h2>Up and running in <span class="grad">a single afternoon.</span></h2>
+      <p>No new hardware. No migration. No phone tree to rebuild.</p>
+    </div>
+    <div class="steps">
+      <div class="step glass reveal">
+        <span class="step-num">01</span>
+        <h3>Connect</h3>
+        <p>Forward your number, inbox, and chat widget to Ralvie. Everything keeps working exactly as it does today.</p>
+      </div>
+      <div class="step glass reveal">
+        <span class="step-num">02</span>
+        <h3>Train</h3>
+        <p>Ralvie learns your services, hours, pricing, and FAQs from a short guided onboarding — in your own words.</p>
+      </div>
+      <div class="step glass reveal">
+        <span class="step-num">03</span>
+        <h3>Go live</h3>
+        <p>Your AI front desk starts answering immediately — booking, qualifying, and routing every conversation, 24/7.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAPABILITIES ===================== -->
+  <section class="section" id="capabilities">
+    <div class="section-head reveal">
+      <span class="label">Capabilities</span>
+      <h2>Everything a great receptionist does — <span class="grad">at machine speed.</span></h2>
+      <p>Move your cursor across a card to feel the depth.</p>
+    </div>
+    <div class="cap-grid">
+      <article class="cap-card glass tilt reveal">
+        <span class="cap-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+        </span>
+        <h3>Instant Answering</h3>
+        <p>Picks up every call and message in under a second — day, night, weekends, and holidays.</p>
+      </article>
+      <article class="cap-card glass tilt reveal">
+        <span class="cap-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2.5"/><path d="M3 10h18M8 2v4M16 2v4M9 15l2 2 4-4"/></svg>
+        </span>
+        <h3>Appointment Booking</h3>
+        <p>Checks live availability and books straight into your calendar — with reminders and rescheduling built in.</p>
+      </article>
+      <article class="cap-card glass tilt reveal">
+        <span class="cap-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 9v6l-4 2v-8L3 4Z"/></svg>
+        </span>
+        <h3>Lead Qualification</h3>
+        <p>Asks the right questions, scores intent, and hands your team conversations that are ready to close.</p>
+      </article>
+      <article class="cap-card glass tilt reveal">
+        <span class="cap-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><path d="M9 6h6M6 9v6a3 3 0 0 0 3 3h6"/></svg>
+        </span>
+        <h3>Smart Routing</h3>
+        <p>Escalates urgent or complex conversations to the right person — with full context, instantly.</p>
+      </article>
+      <article class="cap-card glass tilt reveal">
+        <span class="cap-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>
+        </span>
+        <h3>Multilingual</h3>
+        <p>Converses naturally in 30+ languages, switching mid-conversation without missing a beat.</p>
+      </article>
+      <article class="cap-card glass tilt reveal">
+        <span class="cap-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15 6.7L3 16M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 4v4h-4M3 20v-4h4"/></svg>
+        </span>
+        <h3>CRM Sync</h3>
+        <p>Logs every interaction, transcript, and summary straight into your CRM — automatically.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTS ===================== -->
+  <section class="section" id="results">
+    <div class="section-head reveal">
+      <span class="label">Coverage</span>
+      <h2>An always-on front desk, <span class="grad">everywhere your customers are.</span></h2>
+      <p>One AI receptionist covering every timezone, language, and channel — without a single missed connection.</p>
+    </div>
+    <div class="results-grid">
+      <div class="voice-stage reveal">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div id="voice-canvas" class="voice-canvas" role="img"
+             aria-label="Interactive 3D AI voice visualization that pulses like a live conversation">
+          <div class="canvas-fallback" aria-hidden="true"></div>
+        </div>
+        <p class="stage-hint">Drag to rotate the voice sphere</p>
+      </div>
+      <div class="stats-side">
+        <div class="stat-grid">
+          <div class="stat glass reveal">
+            <div class="stat-num" data-count="100" data-suffix="%">0%</div>
+            <p>Calls &amp; messages answered</p>
+          </div>
+          <div class="stat glass reveal">
+            <div class="stat-num" data-count="0.8" data-decimals="1" data-suffix="s">0s</div>
+            <p>Average response time</p>
+          </div>
+          <div class="stat glass reveal">
+            <div class="stat-num">24/7</div>
+            <p>Coverage, every day of the year</p>
+          </div>
+          <div class="stat glass reveal">
+            <div class="stat-num" data-count="62" data-suffix="%">0%</div>
+            <p>Inquiries resolved without a human</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <blockquote class="quote glass reveal">
+      <p>“Ralvie AI Frontdesk caught <strong>40+ after-hours bookings</strong> in our first month. It pays for itself before lunch.”</p>
+      <footer><span class="quote-avatar" aria-hidden="true"></span>Operations Lead — multi-location clinic</footer>
+    </blockquote>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta" id="cta">
+    <div class="cta-inner glass reveal">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <h2>Give your business a front desk that <span class="grad">never clocks out.</span></h2>
+      <p>Set up in an afternoon. Answering every conversation by tonight.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary">Start free trial</a>
+        <a href="#" class="btn btn-ghost">Talk to sales</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <img src="ralvie-logo.svg" alt="Ralvie" class="brand-logo" />
+      </a>
+      <p>The always-on AI front desk for businesses that can't afford a missed connection.</p>
+    </div>
+    <nav class="footer-col">
+      <h4>Product</h4>
+      <a href="#channels">Channels</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#how">How it works</a>
+      <a href="#results">Results</a>
+    </nav>
+    <nav class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </nav>
+    <nav class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Security</a>
+    </nav>
+  </div>
+  <div class="footer-bar">
+    <span>© 2026 Ralvie AI. All rights reserved.</span>
+    <span>Built for businesses that never miss.</span>
+  </div>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="scene.js"></script>
+<script src="ui.js" defer></script>
+
+</body>
+</html>
