@@ -28,7 +28,7 @@
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="brand" aria-label="Ralvie home">
-      <img src="ralvie-logo.svg" alt="Ralvie" class="brand-logo" />
+      <img src="ralvie-logo-dark.svg" alt="Ralvie" class="brand-logo" />
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -243,28 +243,21 @@
   <!-- ===================== HERO ===================== -->
   <section class="h-hero">
     <div class="h-hero-mesh" aria-hidden="true"></div>
-    <div class="h-hero-grid">
-      <div class="h-hero-copy">
-        <span class="h-badge"><span class="h-badge-dot"></span>Ralvie AI</span>
-        <h1 class="h-hero-title">AI Productivity Intelligence &amp; <span class="h-grad">Frontdesk Automation Platform</span></h1>
-        <p class="h-hero-sub">For Modern Businesses</p>
-        <p class="h-hero-desc">
-          Ralvie AI helps businesses improve productivity, operational visibility, reporting efficiency,
-          and customer engagement with AI-powered productivity analytics and intelligent frontdesk
-          automation — all from one unified platform.
-        </p>
-        <div class="h-hero-cta">
-          <a href="#cta" class="btn btn-primary">Book a Demo</a>
-          <a href="#products" class="btn h-btn-light">Explore Platform
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="h-hero-visual">
-        <div class="h-hero-glow" aria-hidden="true"></div>
-        <div id="home-hero-canvas" class="h-hero-canvas" role="img"
-             aria-label="3D animated visual representing Ralvie AI productivity and frontdesk platforms">
-        </div>
+    <div class="h-hero-noise" aria-hidden="true"></div>
+    <div class="h-hero-center">
+      <span class="h-badge"><span class="h-badge-dot"></span>Ralvie AI</span>
+      <h1 class="h-hero-title">AI Productivity Intelligence &amp; Frontdesk Automation Platform</h1>
+      <p class="h-hero-sub">For Modern Businesses</p>
+      <p class="h-hero-desc">
+        Ralvie AI helps businesses improve productivity, operational visibility, reporting efficiency,
+        and customer engagement with AI-powered productivity analytics and intelligent frontdesk
+        automation — all from one unified platform.
+      </p>
+      <div class="h-hero-cta">
+        <a href="#cta" class="btn btn-primary">Book a Demo</a>
+        <a href="#products" class="btn h-btn-light">Explore Platform
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -377,8 +370,9 @@
     </div>
   </section>
 
-  <!-- ===================== FRONTDESK FEATURES ===================== -->
-  <section class="h-section h-features-section h-features-alt" id="frontdesk-features">
+  <!-- ===================== FRONTDESK FEATURES (DARK) ===================== -->
+  <section class="h-section h-dark h-features-section h-features-dark" id="frontdesk-features">
+    <div class="h-features-dark-mesh" aria-hidden="true"></div>
     <div class="h-section-inner">
       <div class="h-section-head reveal">
         <span class="h-eyebrow">Ralvie AI Frontdesk</span>
@@ -453,8 +447,8 @@
     </div>
   </section>
 
-  <!-- ===================== FINAL CTA (DARK) ===================== -->
-  <section class="h-section h-dark h-cta-section" id="cta">
+  <!-- ===================== FINAL CTA (LIGHT) ===================== -->
+  <section class="h-section h-cta-section" id="cta">
     <div class="h-cta-mesh" aria-hidden="true"></div>
     <div class="h-section-inner">
       <div class="h-cta-card reveal">
@@ -473,7 +467,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="#top" class="brand">
-        <img src="ralvie-logo.svg" alt="Ralvie" class="brand-logo" />
+        <img src="ralvie-logo-dark.svg" alt="Ralvie" class="brand-logo" />
       </a>
       <p>AI productivity intelligence and frontdesk automation, brought together on one platform.</p>
     </div>
@@ -501,15 +495,6 @@
   </div>
 </footer>
 
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-  }
-}
-</script>
-<script type="module" src="home-scene.js"></script>
 <script src="ui.js" defer></script>
 
 </body>
