@@ -28,7 +28,7 @@
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="brand" aria-label="Ralvie home">
-      <img src="ralvie-logo-dark.svg" alt="Ralvie" class="brand-logo" />
+      <img src="assets/ralvie-logo.svg" alt="Ralvie" class="brand-logo" />
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -85,12 +85,12 @@
                       Screen captures
                     </a>
                     <a href="#productivity-features" class="mega-feature">
-                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h4l2.2 2.4H19a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
-                      Projects
-                    </a>
-                    <a href="#productivity-features" class="mega-feature">
                       <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10"/><path d="m3.5 6 1.4 1.5L7.5 5M3.5 12l1.4 1.5L7.5 11M3.5 18l1.4 1.5L7.5 17"/></svg></span>
                       Tasks
+                    </a>
+                    <a href="#productivity-features" class="mega-feature">
+                      <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h4l2.2 2.4H19a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+                      Projects
                     </a>
                     <a href="#productivity-features" class="mega-feature">
                       <span class="mf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="9" rx="1.6"/><rect x="13.5" y="3" width="7.5" height="5.5" rx="1.6"/><rect x="13.5" y="12" width="7.5" height="9" rx="1.6"/><rect x="3" y="15" width="7.5" height="6" rx="1.6"/></svg></span>
@@ -242,11 +242,14 @@
 
   <!-- ===================== HERO ===================== -->
   <section class="h-hero">
-    <div class="h-hero-mesh" aria-hidden="true"></div>
-    <div class="h-hero-noise" aria-hidden="true"></div>
+    <div class="h-hero-bg" aria-hidden="true">
+      <canvas id="h-hero-canvas" class="h-hero-canvas"></canvas>
+
+    </div>
+
     <div class="h-hero-center">
       <span class="h-badge"><span class="h-badge-dot"></span>Ralvie AI</span>
-      <h1 class="h-hero-title">AI Productivity Intelligence &amp; Frontdesk Automation Platform</h1>
+      <h1 class="h-hero-title">AI Productivity Intelligence &amp;<br>Customer Communication Platform</h1>
       <p class="h-hero-sub">For Modern Businesses</p>
       <p class="h-hero-desc">
         Ralvie AI helps businesses improve productivity, operational visibility, reporting efficiency,
@@ -301,28 +304,170 @@
         <p class="h-section-desc">Ralvie AI brings productivity intelligence and customer communication automation together to help businesses operate with more clarity, speed, and control.</p>
       </div>
       <div class="h-product-grid">
+
+        <!-- ── Productivity card ── -->
         <article class="h-product-card glass-light reveal">
-          <span class="h-product-ic">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 20v-6M12 20V8M17 20v-9"/></svg>
-          </span>
-          <h3 class="h-product-title">Ralvie AI Productivity Platform</h3>
-          <p class="h-product-sub">AI Productivity Analytics &amp; Workforce Intelligence Platform</p>
-          <p class="h-product-desc">Ralvie AI helps organizations understand productivity, improve operational visibility, simplify reporting, and analyze workforce insights through AI-powered analytics.</p>
-          <a href="#productivity-features" class="h-product-cta">Explore Productivity Platform
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <div class="h-prod-visual h-prod-visual--prod">
+
+            <!-- hero product image -->
+            <img class="h-prod-hero-img" src="assets/Ralvie AI Productivity Platform.jpg" alt="Ralvie AI Productivity Platform" loading="lazy"/>
+
+            <!-- Focus Score — top-left -->
+            <div class="h-pw h-pw-p1">
+              <div class="h-pw-row">
+                <svg class="h-pw-ring" viewBox="0 0 48 48">
+                  <defs><linearGradient id="pw-g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e3bb3"/><stop offset="100%" stop-color="#5841d0"/></linearGradient></defs>
+                  <circle cx="24" cy="24" r="20" fill="none" stroke="rgba(30,59,179,0.12)" stroke-width="4"/>
+                  <circle cx="24" cy="24" r="20" fill="none" stroke="url(#pw-g1)" stroke-width="4" stroke-dasharray="109 126" stroke-dashoffset="-31" stroke-linecap="round"/>
+                  <text x="24" y="28" text-anchor="middle" font-size="10" font-weight="700" fill="#1e3bb3">87%</text>
+                </svg>
+                <div>
+                  <div class="h-pw-title">Focus Score</div>
+                  <div class="h-pw-sub">↑ 12% vs yesterday</div>
+                </div>
+              </div>
+              <div class="h-pw-divider"></div>
+              <div class="h-pw-tags">
+                <span class="h-pw-tag">Deep Work</span>
+                <span class="h-pw-tag">On Track</span>
+              </div>
+            </div>
+
+            <!-- Time Tracked — bottom-left -->
+            <div class="h-pw h-pw-p3">
+              <div class="h-pw-lbl">Time Tracked Today</div>
+              <div class="h-pw-big">06:42</div>
+              <div class="h-pw-proj"><span class="h-pw-dot-g"></span>Ralvie Platform</div>
+            </div>
+
+            <!-- Productivity Chart — top-right -->
+            <div class="h-pw h-pw-p2">
+              <div class="h-pw-head">
+                <svg viewBox="0 0 16 16" fill="none" width="13" height="13"><rect x="1" y="8" width="3" height="7" rx="1" fill="#1e3bb3"/><rect x="6" y="4" width="3" height="11" rx="1" fill="#5841d0"/><rect x="11" y="6" width="3" height="9" rx="1" fill="#1e3bb3" opacity=".6"/></svg>
+                This Week
+              </div>
+              <div class="h-pw-bars">
+                <div class="h-pw-b" style="--bh:55%"></div>
+                <div class="h-pw-b" style="--bh:72%"></div>
+                <div class="h-pw-b" style="--bh:48%"></div>
+                <div class="h-pw-b" style="--bh:88%"></div>
+                <div class="h-pw-b" style="--bh:65%"></div>
+                <div class="h-pw-b" style="--bh:92%"></div>
+                <div class="h-pw-b" style="--bh:78%"></div>
+              </div>
+              <div class="h-pw-days">M T W T F S S</div>
+            </div>
+
+            <!-- AI Activity Pill — mid-right -->
+            <div class="h-pw h-pw-p4">
+              <span class="h-pw-pulse"></span>
+              AI captured 14 activities
+            </div>
+
+            <!-- Team Active — bottom-right -->
+            <div class="h-pw h-pw-p5">
+              <div class="h-pw-lbl">Team Active Now</div>
+              <div class="h-pw-avatars">
+                <div class="h-pw-av" style="background:linear-gradient(135deg,#1e3bb3,#5841d0)">A</div>
+                <div class="h-pw-av" style="background:linear-gradient(135deg,#0891b2,#06b6d4)">S</div>
+                <div class="h-pw-av" style="background:linear-gradient(135deg,#059669,#10b981)">R</div>
+                <div class="h-pw-av" style="background:linear-gradient(135deg,#dc2626,#f97316)">M</div>
+              </div>
+              <div class="h-pw-sub">4 members · 3 projects</div>
+            </div>
+
+          </div>
+          <div class="h-prod-body">
+            <h3 class="h-product-title">Ralvie AI Productivity Platform</h3>
+            <p class="h-product-sub">AI Productivity Analytics &amp; Workforce Intelligence Platform</p>
+            <p class="h-product-desc">Ralvie AI helps organizations understand productivity, improve operational visibility, simplify reporting, and analyze workforce insights through AI-powered analytics.</p>
+            <a href="#productivity-features" class="h-product-cta">Explore Productivity Platform
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
         </article>
+
+        <!-- ── Frontdesk card ── -->
         <article class="h-product-card glass-light reveal">
-          <span class="h-product-ic">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18v-6a7 7 0 0 1 14 0v6"/><path d="M5 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0ZM15 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0Z"/><path d="M19 18a4 4 0 0 1-4 4h-3"/></svg>
-          </span>
-          <h3 class="h-product-title">Ralvie AI Frontdesk</h3>
-          <p class="h-product-sub">AI-Powered Customer Communication Platform</p>
-          <p class="h-product-desc">Ralvie AI Frontdesk helps businesses automate customer conversations using AI voice agents, chatbots, web voicebots, SMS conversations, and smart lead qualification workflows.</p>
-          <a href="./frontdesk.html" class="h-product-cta">Explore Frontdesk
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <div class="h-prod-visual h-prod-visual--fd">
+
+            <!-- hero product image -->
+            <img class="h-prod-hero-img" src="assets/Ralvie AI Frontdesk.jpg" alt="Ralvie AI Frontdesk" loading="lazy"/>
+
+            <!-- Voice Widget — top-left (waveform) -->
+            <div class="h-pw h-fdw-p1">
+              <div class="h-pw-lbl">AI Voice Agent</div>
+              <div class="h-fdw-waveform">
+                <span style="--bh:30%"></span><span style="--bh:60%"></span><span style="--bh:45%"></span>
+                <span style="--bh:80%"></span><span style="--bh:55%"></span><span style="--bh:95%"></span>
+                <span style="--bh:70%"></span><span style="--bh:100%"></span><span style="--bh:65%"></span>
+                <span style="--bh:90%"></span><span style="--bh:75%"></span><span style="--bh:100%"></span>
+                <span style="--bh:55%"></span><span style="--bh:85%"></span><span style="--bh:40%"></span>
+                <span style="--bh:70%"></span><span style="--bh:50%"></span><span style="--bh:35%"></span>
+              </div>
+              <div class="h-pw-proj"><span class="h-pw-dot-g"></span>Active · 127 sessions</div>
+            </div>
+
+            <!-- Call Widget — top-right (mic + pulsing rings) -->
+            <div class="h-pw h-fdw-p2">
+              <div class="h-pw-lbl">AI Call Agent</div>
+              <div class="h-fdw-mic-wrap">
+                <span class="h-fdw-ring"></span>
+                <span class="h-fdw-ring"></span>
+                <span class="h-fdw-ring"></span>
+                <span class="h-fdw-ring"></span>
+                <div class="h-fdw-mic-ic">
+                  <svg viewBox="0 0 24 24" fill="none" width="20" height="20" stroke="#5841d0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z"/><path d="M18.5 10a6.5 6.5 0 0 1-13 0M12 16.5V21M8.5 21h7"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Widget — bottom-left (bubbles) -->
+            <div class="h-pw h-fdw-p3">
+              <div class="h-pw-lbl">AI Chatbot</div>
+              <div class="h-fdw-chat">
+                <div class="h-fdw-bubble h-fdw-bubble--user">Hi! I need help</div>
+                <div class="h-fdw-bubble h-fdw-bubble--ai">
+                  <div class="h-fdw-voice-bars">
+                    <span style="--bh:35%"></span><span style="--bh:75%"></span><span style="--bh:50%"></span>
+                    <span style="--bh:90%"></span><span style="--bh:45%"></span><span style="--bh:80%"></span>
+                    <span style="--bh:55%"></span><span style="--bh:95%"></span>
+                  </div>
+                  <div class="h-fdw-mic-btn">
+                    <svg viewBox="0 0 24 24" fill="none" width="10" height="10" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3Z"/><path d="M18.5 10a6.5 6.5 0 0 1-13 0"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Support Widget — bottom-right (24/7 headset) -->
+            <div class="h-pw h-fdw-p4">
+              <div class="h-fdw-support">
+                <div class="h-fdw-headset-ic">
+                  <svg viewBox="0 0 24 24" fill="none" width="28" height="28" stroke="#5841d0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18v-6a7 7 0 0 1 14 0v6"/><path d="M5 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0ZM15 15.5a2 2 0 0 1 4 0V18a2 2 0 0 1-4 0Z"/><path d="M19 18a4 4 0 0 1-4 4h-3"/></svg>
+                </div>
+                <div>
+                  <div class="h-fdw-247">24/7</div>
+                  <div class="h-pw-sub">Always available</div>
+                </div>
+              </div>
+              <div class="h-pw-tags" style="margin-top:9px">
+                <span class="h-pw-tag h-pw-tag--live">● Online</span>
+                <span class="h-pw-tag">AI Support</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="h-prod-body">
+            <h3 class="h-product-title">Ralvie AI Frontdesk</h3>
+            <p class="h-product-sub">AI-Powered Customer Communication Platform</p>
+            <p class="h-product-desc">Ralvie AI Frontdesk helps businesses automate customer conversations using AI voice agents, chatbots, web voicebots, SMS conversations, and smart lead qualification workflows.</p>
+            <a href="./frontdesk.html" class="h-product-cta">Explore Frontdesk
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
         </article>
+
       </div>
     </div>
   </section>
@@ -337,34 +482,46 @@
       </div>
       <div class="h-feature-grid">
         <article class="h-feature-card glass-light reveal">
-          <span class="h-feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span>
+          <div class="h-feature-img">
+            <img src="assets/Automatic Activity Intelligence.jpg" alt="Automatic Activity Intelligence" loading="lazy" />
+          </div>
           <h3>Automatic Activity Intelligence</h3>
           <p>Automatically analyze work activity, application usage, and operational patterns with AI-powered visibility.</p>
         </article>
         <article class="h-feature-card glass-light reveal">
-          <span class="h-feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3.5 2"/></svg></span>
+          <div class="h-feature-img">
+            <img src="assets/Smart Time Logs.jpg" alt="Smart Time Logs" loading="lazy" />
+          </div>
           <h3>Smart Time Logs</h3>
           <p>Generate intelligent time logs, work summaries, and productivity reports automatically.</p>
         </article>
         <article class="h-feature-card glass-light reveal">
-          <span class="h-feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+          <div class="h-feature-img">
+            <img src="assets/Intelligent Screen Capture.jpg" alt="Intelligent Screen Capture" loading="lazy" />
+          </div>
           <h3>Intelligent Screen Capture</h3>
           <p>Capture contextual screenshots with OCR-powered operational insights and activity understanding.</p>
         </article>
         <article class="h-feature-card glass-light reveal">
-          <span class="h-feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="9" rx="1.6"/><rect x="13.5" y="3" width="7.5" height="5.5" rx="1.6"/><rect x="13.5" y="12" width="7.5" height="9" rx="1.6"/><rect x="3" y="15" width="7.5" height="6" rx="1.6"/></svg></span>
-          <h3>AI Analytics Dashboard</h3>
-          <p>Visualize productivity trends, operational insights, team performance, and workflow patterns from one dashboard.</p>
+          <div class="h-feature-img">
+            <img src="assets/Task Management.jpg" alt="Task Management" loading="lazy" />
+          </div>
+          <h3>Task Management</h3>
+          <p>Create, assign, and track tasks across projects and teams with intelligent prioritization and progress monitoring.</p>
         </article>
         <article class="h-feature-card glass-light reveal">
-          <span class="h-feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h4l2.2 2.4H19a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+          <div class="h-feature-img">
+            <img src="assets/Project Visibility.jpg" alt="Project Visibility" loading="lazy" />
+          </div>
           <h3>Project Visibility</h3>
           <p>Understand which projects are moving, who is contributing, and where attention is needed.</p>
         </article>
         <article class="h-feature-card glass-light reveal">
-          <span class="h-feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l7-4 7 4M5 16l7 4 7-4M5 12l7 4 7-4"/></svg></span>
-          <h3>Billable Hour Clarity</h3>
-          <p>Improve billing accuracy by understanding how work time is used across clients, projects, and teams.</p>
+          <div class="h-feature-img">
+            <img src="assets/AI Analytics Dashboard.jpg" alt="AI Analytics Dashboard" loading="lazy" />
+          </div>
+          <h3>AI Analytics Dashboard</h3>
+          <p>Visualize productivity trends, operational insights, team performance, and workflow patterns from one dashboard.</p>
         </article>
       </div>
     </div>
@@ -422,41 +579,56 @@
         <h2 class="h-section-title">Award-Winning <span class="h-grad">AI Platforms</span> Trusted by Modern Businesses &amp; Growing Teams</h2>
         <p class="h-section-desc">Recognized for innovation in AI productivity analytics, operational intelligence, customer engagement, and business automation.</p>
       </div>
-      <div class="h-trust-grid">
-        <span class="h-trust-badge glass-light reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z"/></svg>
-          Approved on SaaSHub
-        </span>
-        <span class="h-trust-badge glass-light reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11a7 7 0 1 1 14 0c0 5-6 11-7 11s-7-6-7-11Z"/><circle cx="12" cy="11" r="2.5"/></svg>
-          Featured on Product Hunt
-        </span>
-        <span class="h-trust-badge glass-light reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-          Loved by Customers
-        </span>
-        <span class="h-trust-badge glass-light reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
-          Powered by Secure AI
-        </span>
-        <span class="h-trust-badge glass-light reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 11a3 3 0 1 0 0-6M21.5 20a5 5 0 0 0-5-5"/></svg>
-          Trusted by Growing Teams
-        </span>
+      <div class="h-trust-grid" style="align-items: center; gap: 24px;">
+        <iframe
+          src="https://api.aikaptan.com/api/embed/featured-badge.html?slug=ralvie-ai-frontdesk"
+          title="Ralvie AI FrontDesk — Featured on AI KAPTAN"
+          width="265"
+          height="60"
+          style="border:0; overflow:hidden;"
+          scrolling="no"
+          loading="lazy"
+        ></iframe>
+
+        <a href="https://open-launch.com" target="_blank" title="Powered by Open-Launch">
+          <img 
+            src="https://open-launch.com/images/badges/powered-by-light.svg" 
+            alt="Powered by Open-Launch" 
+            width="150" 
+            height="44"
+          />
+        </a>
+
+        <a href="https://www.softwaresuggest.com" target="_blank">
+          <img src="https://www.softwaresuggest.com/award_logo/customer-choice-winter-2025.png" alt="SoftwareSuggest Customer Choice Winter 2025" style="max-width: 150px; height: auto;">
+        </a>
+
+        <!-- Begin SF Tag -->
+        <div class="sf-root" data-id="3909336" data-badge="customers-love-us-black" data-variant-id="sf" style="width:125px">
+          <a href="https://sourceforge.net/software/product/Ralvie-AI/" target="_blank">Ralvie AI Reviews</a>
+        </div>
+        <script>(function () {var sc=document.createElement('script');sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3909336&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
+        </script>
+        <!-- End SF Tag -->
+
+        <a href="https://www.producthunt.com/products/ralvie-ai/reviews/new?utm_source=badge-product_review&utm_medium=badge" target="_blank">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1090301&theme=light" alt="Ralvie AI - Unleash The Power of Every Minute | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+        </a>
+
+        <a href="https://www.saashub.com/ralvie-ai?utm_source=badge&utm_campaign=badge&utm_content=ralvie-ai" target="_blank">
+          <img src="https://cdn-b.saashub.com/img/badges/approved-color.png?v=1" alt="Ralvie.AI badge" style="max-width: 150px; height: auto;"/>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== FINAL CTA (LIGHT) ===================== -->
+  <!-- ===================== FINAL CTA ===================== -->
   <section class="h-section h-cta-section" id="cta">
-    <div class="h-cta-mesh" aria-hidden="true"></div>
-    <div class="h-section-inner">
-      <div class="h-cta-card reveal">
-        <span class="h-cta-eyebrow">Get Started</span>
-        <h2 class="h-cta-title">Improve Productivity &amp; <span class="h-grad">Customer Communication</span> With AI</h2>
-        <p class="h-cta-desc">Ralvie AI helps businesses improve operational visibility, workforce productivity, reporting efficiency, and customer engagement through AI-powered automation.</p>
-        <a href="#" class="btn btn-primary">Book a Demo</a>
-      </div>
+    <div class="h-section-inner h-cta-inner reveal">
+      <span class="h-cta-eyebrow">Get Started</span>
+      <h2 class="h-cta-title">Improve Productivity &amp; <span class="h-grad">Customer Communication</span> With AI</h2>
+      <p class="h-cta-desc">Ralvie AI helps businesses improve operational visibility, workforce productivity, reporting efficiency, and customer engagement through AI-powered automation.</p>
+      <a href="#" class="btn btn-primary">Book a Demo</a>
     </div>
   </section>
 
@@ -467,20 +639,54 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="#top" class="brand">
-        <img src="ralvie-logo-dark.svg" alt="Ralvie" class="brand-logo" />
+        <img src="assets/ralvie-logo.svg" alt="Ralvie" class="brand-logo" />
       </a>
       <p>AI productivity intelligence and frontdesk automation, brought together on one platform.</p>
     </div>
     <nav class="footer-col">
       <h4>Products</h4>
-      <a href="#productivity-features">Ralvie AI Productivity</a>
-      <a href="./frontdesk.html">Ralvie AI Frontdesk</a>
+      <a href="#productivity-features" style="font-weight: 600; color: var(--text); margin-bottom: 4px;">Ralvie AI Productivity</a>
+      <a href="#productivity-features">Automatic tracking</a>
+      <a href="#productivity-features">Time logs</a>
+      <a href="#productivity-features">Screen captures</a>
+      <a href="#productivity-features">Tasks &amp; Projects</a>
+      <a href="#productivity-features">Dashboards</a>
+      <div style="height: 12px;"></div>
+      <a href="./frontdesk.html" style="font-weight: 600; color: var(--text); margin-bottom: 4px;">Ralvie AI Frontdesk</a>
+      <a href="./frontdesk.html">AI Phone Receptionist</a>
+      <a href="./frontdesk.html">AI Website Chatbot</a>
+      <a href="./frontdesk.html">AI Email Manager</a>
+      <a href="./frontdesk.html">SMS Texting Agent</a>
+      <a href="./frontdesk.html">AI Web Voicebot</a>
+      <a href="./frontdesk.html">Website Forms</a>
     </nav>
     <nav class="footer-col">
+      <h4>Solutions</h4>
+      <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-dim); margin-top: 4px; margin-bottom: 4px; display: block; text-transform: uppercase;">Productivity</span>
+      <a href="#productivity-features">Employee Productivity</a>
+      <a href="#productivity-features">Time Tracking</a>
+      <a href="#productivity-features">Project Management</a>
+      <a href="#productivity-features">Task Management</a>
+      <a href="#productivity-features">Dashboards &amp; Reports</a>
+      <div style="height: 12px;"></div>
+      <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-dim); margin-top: 4px; margin-bottom: 4px; display: block; text-transform: uppercase;">Frontdesk</span>
+      <a href="./frontdesk.html">Customer Support</a>
+      <a href="./frontdesk.html">Lead Management</a>
+      <a href="./frontdesk.html">AI Call Handling</a>
+      <a href="./frontdesk.html">AI Chat Support</a>
+      <a href="./frontdesk.html">Email &amp; SMS Automation</a>
+    </nav>
+    <nav class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Blogs</a>
+      <a href="#">Integrations</a>
+      <a href="#">Contact us</a>
+      <a href="#">Downloads</a>
+      <a href="#">Knowledge base</a>
+      <div style="height: 16px;"></div>
       <h4>Company</h4>
       <a href="#">About</a>
       <a href="#">Careers</a>
-      <a href="#">Contact</a>
     </nav>
     <nav class="footer-col">
       <h4>Legal</h4>
@@ -496,6 +702,217 @@
 </footer>
 
 <script src="ui.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script>
+(function () {
+  if (typeof THREE === 'undefined') return;
+  var canvas = document.getElementById('h-hero-canvas');
+  if (!canvas) return;
+  var hero = document.querySelector('.h-hero');
+  var W = hero.clientWidth, H = hero.clientHeight;
+
+  var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(W, H, false);
+
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(48, W / H, 0.1, 200);
+  camera.position.set(0, 11, 26);
+  camera.lookAt(0, 0, 0);
+
+  var root = new THREE.Group();
+  scene.add(root);
+
+  /* soft background glow blobs */
+  [0x1e3bb3, 0x5841d0, 0x7a6ae0].forEach(function (col) {
+    var r = 9 + Math.random() * 5;
+    var m = new THREE.Mesh(
+      new THREE.SphereGeometry(r, 8, 6),
+      new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.05 + Math.random() * 0.04 })
+    );
+    m.position.set((Math.random() - 0.5) * 44, (Math.random() - 0.5) * 22, -14 - Math.random() * 8);
+    root.add(m);
+  });
+
+  /*
+   * AI NEURAL NETWORK — 5 layers representing the Ralvie AI pipeline:
+   *   Layer 0 (x=-18)  Input Data       — raw activity, time, tasks
+   *   Layer 1 (x=-9)   Feature Extraction
+   *   Layer 2 (x= 0)   AI Core / Brain  — largest, most prominent
+   *   Layer 3 (x= 9)   Insight Engine
+   *   Layer 4 (x= 18)  Output / Actions — analytics, reports, KPIs
+   */
+  var layerDef = [
+    { x: -18, n: 5, r: 0.44, col: 0x1e3bb3, op: 0.84 },
+    { x:  -9, n: 7, r: 0.30, col: 0x3a35cc, op: 0.68 },
+    { x:   0, n: 9, r: 0.40, col: 0x5841d0, op: 0.88 },
+    { x:   9, n: 7, r: 0.30, col: 0x7060d8, op: 0.68 },
+    { x:  18, n: 4, r: 0.48, col: 0xa89fff, op: 0.90 }
+  ];
+
+  var layerNodes = [], allNodes = [];
+
+  layerDef.forEach(function (ld, li) {
+    var nodes = [];
+    for (var i = 0; i < ld.n; i++) {
+      var y = (i - (ld.n - 1) / 2) * 2.4;
+      var z = (Math.random() - 0.5) * 3.5;
+      var mesh = new THREE.Mesh(
+        new THREE.SphereGeometry(ld.r, 14, 10),
+        new THREE.MeshBasicMaterial({ color: ld.col, transparent: true, opacity: ld.op })
+      );
+      mesh.position.set(ld.x, y, z);
+      root.add(mesh);
+      var node = { mesh: mesh, pos: mesh.position.clone(), li: li, phase: Math.random() * Math.PI * 2, baseOp: ld.op };
+      nodes.push(node);
+      allNodes.push(node);
+    }
+    layerNodes.push(nodes);
+  });
+
+  /* ---- connections: each node → 3 random nodes in the next layer ---- */
+  var connections = [], edgeVerts = [];
+  for (var li = 0; li < layerNodes.length - 1; li++) {
+    layerNodes[li].forEach(function (src) {
+      var pool = layerNodes[li + 1].slice().sort(function () { return Math.random() - 0.5; });
+      pool.slice(0, 3).forEach(function (dst) {
+        edgeVerts.push(src.pos.x, src.pos.y, src.pos.z, dst.pos.x, dst.pos.y, dst.pos.z);
+        connections.push({ a: src.pos.clone(), b: dst.pos.clone() });
+      });
+    });
+  }
+  var eg = new THREE.BufferGeometry();
+  eg.setAttribute('position', new THREE.Float32BufferAttribute(edgeVerts, 3));
+  root.add(new THREE.LineSegments(eg,
+    new THREE.LineBasicMaterial({ color: 0x6a58d8, transparent: true, opacity: 0.22 })));
+
+  /* ---- skip-layer connections (residual links) ---- */
+  var skipVerts = [];
+  for (var li = 0; li < layerNodes.length - 2; li++) {
+    for (var k = 0; k < 4; k++) {
+      var a = layerNodes[li][Math.floor(Math.random() * layerNodes[li].length)];
+      var b = layerNodes[li + 2][Math.floor(Math.random() * layerNodes[li + 2].length)];
+      skipVerts.push(a.pos.x, a.pos.y, a.pos.z, b.pos.x, b.pos.y, b.pos.z);
+    }
+  }
+  var sg = new THREE.BufferGeometry();
+  sg.setAttribute('position', new THREE.Float32BufferAttribute(skipVerts, 3));
+  root.add(new THREE.LineSegments(sg,
+    new THREE.LineBasicMaterial({ color: 0x5841d0, transparent: true, opacity: 0.07 })));
+
+  /* ---- flowing data particles (left → right) ---- */
+  var FLOW_N = 90;
+  var fPos = new Float32Array(FLOW_N * 3);
+  var fData = [];
+  for (var i = 0; i < FLOW_N; i++) {
+    var ci = Math.floor(Math.random() * connections.length);
+    var t  = Math.random();
+    fData.push({ ci: ci, t: t, spd: 0.009 + Math.random() * 0.011 });
+    var c = connections[ci];
+    fPos[i * 3]     = c.a.x + (c.b.x - c.a.x) * t;
+    fPos[i * 3 + 1] = c.a.y + (c.b.y - c.a.y) * t;
+    fPos[i * 3 + 2] = c.a.z + (c.b.z - c.a.z) * t;
+  }
+  var fg = new THREE.BufferGeometry();
+  fg.setAttribute('position', new THREE.BufferAttribute(fPos, 3));
+  root.add(new THREE.Points(fg,
+    new THREE.PointsMaterial({ color: 0xd8d5ff, size: 0.22, transparent: true, opacity: 0.96 })));
+
+  /* ---- ambient floating dust ---- */
+  var DUST_N = 70;
+  var dPos = new Float32Array(DUST_N * 3);
+  var dData = [];
+  for (var i = 0; i < DUST_N; i++) {
+    var x = (Math.random() - 0.5) * 52;
+    var y = (Math.random() - 0.5) * 28;
+    var z = (Math.random() - 0.5) * 8 - 2;
+    dPos[i * 3] = x; dPos[i * 3 + 1] = y; dPos[i * 3 + 2] = z;
+    dData.push({ y0: y, phase: Math.random() * Math.PI * 2 });
+  }
+  var dg = new THREE.BufferGeometry();
+  dg.setAttribute('position', new THREE.BufferAttribute(dPos, 3));
+  root.add(new THREE.Points(dg,
+    new THREE.PointsMaterial({ color: 0x7a6ae0, size: 0.10, transparent: true, opacity: 0.38 })));
+
+  /* ---- pulsing rings on AI-core nodes (layer 2) ---- */
+  var coreRings = layerNodes[2].map(function (n, i) {
+    var mesh = new THREE.Mesh(
+      new THREE.RingGeometry(0.58, 0.72, 40),
+      new THREE.MeshBasicMaterial({ color: 0x7a6ae0, transparent: true, opacity: 0.18, side: THREE.DoubleSide })
+    );
+    mesh.position.copy(n.pos);
+    mesh.rotation.x = Math.PI / 2 + (Math.random() - 0.5) * 0.5;
+    mesh.rotation.z = Math.random() * Math.PI;
+    root.add(mesh);
+    return { mesh: mesh, phase: i * (Math.PI * 2 / 9) };
+  });
+
+  /* ---- mouse ---- */
+  var mx = 0, my = 0, lx = 0, ly = 0;
+  window.addEventListener('mousemove', function (e) {
+    mx = (e.clientX / window.innerWidth  - 0.5) * 2;
+    my = (e.clientY / window.innerHeight - 0.5) * 2;
+  });
+
+  /* ---- animation loop ---- */
+  var clk = 0;
+  (function tick() {
+    requestAnimationFrame(tick);
+    clk += 0.005;
+    lx += (mx - lx) * 0.06;
+    ly += (my - ly) * 0.06;
+
+    root.rotation.y = clk * 0.018 + lx * 0.22;
+    root.rotation.x = Math.sin(clk * 0.20) * 0.07 - ly * 0.13;
+
+    /* node activation pulses */
+    allNodes.forEach(function (n) {
+      var amp   = n.li === 2 ? 0.18 : (n.li === 0 || n.li === 4 ? 0.12 : 0.08);
+      var pulse = Math.sin(clk * 1.1 + n.phase);
+      var s = 1 + amp * pulse;
+      n.mesh.scale.set(s, s, s);
+      n.mesh.material.opacity = n.baseOp * (0.70 + (n.li === 2 ? 0.32 : 0.22) * pulse);
+    });
+
+    /* core rings breathe */
+    coreRings.forEach(function (r) {
+      var t = clk * 0.85 + r.phase;
+      var s = 1 + 0.22 * Math.sin(t);
+      r.mesh.scale.set(s, s, 1);
+      r.mesh.material.opacity = 0.05 + 0.18 * Math.abs(Math.sin(t * 0.5));
+    });
+
+    /* data particles flow left → right */
+    var arr = fg.attributes.position.array;
+    fData.forEach(function (fd, i) {
+      fd.t += fd.spd;
+      if (fd.t >= 1.0) { fd.t = 0; fd.ci = Math.floor(Math.random() * connections.length); }
+      var c = connections[fd.ci];
+      arr[i * 3]     = c.a.x + (c.b.x - c.a.x) * fd.t;
+      arr[i * 3 + 1] = c.a.y + (c.b.y - c.a.y) * fd.t;
+      arr[i * 3 + 2] = c.a.z + (c.b.z - c.a.z) * fd.t;
+    });
+    fg.attributes.position.needsUpdate = true;
+
+    /* dust drifts */
+    var dArr = dg.attributes.position.array;
+    dData.forEach(function (d, i) {
+      dArr[i * 3 + 1] = d.y0 + 2 * Math.sin(clk * 0.4 + d.phase);
+    });
+    dg.attributes.position.needsUpdate = true;
+
+    renderer.render(scene, camera);
+  })();
+
+  window.addEventListener('resize', function () {
+    W = hero.clientWidth; H = hero.clientHeight;
+    camera.aspect = W / H;
+    camera.updateProjectionMatrix();
+    renderer.setSize(W, H, false);
+  });
+})();
+</script>
 
 </body>
 </html>
